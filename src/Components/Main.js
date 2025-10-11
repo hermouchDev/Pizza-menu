@@ -1,33 +1,27 @@
+import pizzaData from '../data'
 function Main() {
     return (
         <main className="menu">
             <h2>Our menu</h2>
-            <Pizza 
-                name="Focaccia" 
-                ingredients="Bread with italian olive oil and rosemary"
-                price={25}
-                photoName="pizzas/focaccia.jpg"
-            />
-            <Pizza 
-                name="Pizza Margherita" 
-                ingredients="Tomato and mozarella"
-                price={35}
-                photoName="pizzas/margherita.jpg"
-            />
+            <ul className='pizzas'>
+                {
+                    pizzaData.map((pizza) => <Pizza pizzaInfo={pizza} key={pizza.name}/>)
+                }
+            </ul>
         </main>
     )
 }
 
 function Pizza(props) {
     return (
-        <div className="pizza">
-            <img src={props.photoName} alt="props.pizzaName" />
+        <li className="pizza">
+            <img src={props.pizzaInfo.photoName} alt="props.pizzaName" />
             <div>
-                <h3>{props.pizzaName}</h3>
-                <p>{props.ingredients}</p>
-                <span>{props.price} DH</span>
+                <h3>{props.pizzaInfo.name}</h3>
+                <p>{props.pizzaInfo.ingredients}</p>
+                <span cal>{props.pizzaInfo.price} DH</span>
             </div>
-        </div>
+        </li>
     );
 }
 
