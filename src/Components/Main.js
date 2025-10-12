@@ -4,6 +4,7 @@ function Main() {
     return (
         <main className="menu">
             <h2>Our menu</h2>
+            <p>Authentic Moroccain cuisine. 6 creative dishes to choose from. All from our stone oven, All organic, All delicious.</p>
             <ul className='pizzas'>
                 {
                     pizzas.map((pizza) => <Pizza pizzaInfo={pizza} key={pizza.name}/>)
@@ -13,16 +14,16 @@ function Main() {
     )
 }
 
-function Pizza(props) {
-    const pizzaStatu = props.pizzaInfo.soldOut ? "sold-out" : "";
+function Pizza({pizzaInfo}) {
+    const pizzaStatu = pizzaInfo.soldOut ? "sold-out" : "";
     return (
         <li className={`pizza ${pizzaStatu}`}>
-            <img src={props.pizzaInfo.photoName} alt="props.pizzaName" />
+            <img src={pizzaInfo.photoName} alt="props.pizzaName" />
             <div>
-                <h3>{props.pizzaInfo.name}</h3>
-                <p>{props.pizzaInfo.ingredients}</p>
+                <h3>{pizzaInfo.name}</h3>
+                <p>{pizzaInfo.ingredients}</p>
                 {
-                    pizzaStatu ? <span>Sold Out</span> : <span>{props.pizzaInfo.price} DH</span>
+                    pizzaStatu ? <span>Sold Out</span> : <span>{pizzaInfo.price} DH</span>
                 }
             </div>
         </li>
