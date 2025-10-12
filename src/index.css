@@ -111,9 +111,19 @@ body {
 }
 
 .pizza img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px #edc84b;
   width: 12rem;
   aspect-ratio: 1;
   align-self: start;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.pizza img:hover {
+  box-shadow: 5px 5px 5px #edc336;
 }
 
 .pizza div {
@@ -159,19 +169,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1rem;
 }
 
 .btn {
+  margin: 1.5rem 0;
   color: inherit;
   font-family: inherit;
   border: none;
+  border-radius: 10px;
   font-size: 1.4rem;
   font-weight: 500;
   background-color: #edc84b;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
   transition: all 0.2s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .btn:hover {
