@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+# Hermouch Pizza Menu 🍕
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive pizza menu website built with React, showcasing authentic Moroccan cuisine pizzas.
+
+## Features
+
+- 🎨 Modern and clean UI design
+- 📱 Fully responsive design (mobile, tablet, and desktop)
+- ⏰ Real-time restaurant hours indicator
+- 🏷️ Menu items with pricing and ingredients
+- 🚫 Sold-out status tracking
+- 🌟 Hover effects and smooth transitions
+
+## 🛠️ Technologies Used
+
+- **React** 19.2.0
+- **CSS3** with Flexbox and Grid
+- **Google Fonts** (Roboto Mono)
+
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd pizza-menu
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
@@ -29,42 +70,38 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗️ Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+pizza-menu/
+├── public/
+│   ├── index.html
+│   └── pizzas/          # Pizza images
+├── src/
+│   ├── Components/
+│   │   ├── Header.js    # Restaurant header
+│   │   ├── Main.js      # Menu display
+│   │   └── Footer.js    # Hours and order button
+│   ├── App.js           # Main app component
+│   ├── data.js          # Pizza data
+│   ├── index.css        # Styles with responsive design
+│   └── index.js         # Entry point
+└── package.json
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📱 Responsive Design
+The website is fully responsive with breakpoints for:
+    **Mobile**: ≤ 480px - Single column layout, stacked pizza cards
+    **Tablet**: ≤ 768px - Single column layout, optimized spacing
+    **Desktop**: > 768px - Two-column grid layout
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⏰ Restaurant Hours
+Open: 11:00 AM - 11:00 PM
+The footer displays current time and availability status
 
-## Learn More
+## 👤 Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Hermouch Abdelmajid
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ using React
