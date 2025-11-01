@@ -73,20 +73,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 🏗️ Project Structure
 
-pizza-menu/
-├── public/
-│   ├── index.html
-│   └── pizzas/          # Pizza images
-├── src/
-│   ├── Components/
-│   │   ├── Header.js    # Restaurant header
-│   │   ├── Main.js      # Menu display
-│   │   └── Footer.js    # Hours and order button
-│   ├── App.js           # Main app component
-│   ├── data.js          # Pizza data
-│   ├── index.css        # Styles with responsive design
-│   └── index.js         # Entry point
-└── package.json
+![alt text](image.png)
 
 ## 📱 Responsive Design
 The website is fully responsive with breakpoints for:
