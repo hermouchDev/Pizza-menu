@@ -18,7 +18,7 @@ const pizzaData = [
     ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
     price: 50,
     photoName: "pizzas/spinaci.jpg",
-    soldOut: false,
+    soldOut: true,
   },
   {
     name: "Pizza Funghi",
