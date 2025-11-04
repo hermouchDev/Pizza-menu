@@ -292,7 +292,8 @@ body {
 
   .menu > p {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
+    margin-bottom: 4rem;
   }
 
   .pizzas {
@@ -306,21 +307,22 @@ body {
     gap: 1.6rem;
   }
 
-  .pizza img {
+  .pizza .pizza-image img {
     width: 100%;
-    max-width: 20rem;
+    max-width: 19rem;
   }
 
-  .pizza div {
-    align-items: center;
+  .pizza .pizza-info {
+    display: flex;
+    justify-content: center;
   }
 
   .pizza h3 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .pizza p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .pizza span {
